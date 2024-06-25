@@ -1,0 +1,614 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    color: rgb(197, 203, 231);
+    text-align: center;
+}
+
+
+.sectionHeader {
+    background: #0a0a5c;
+    height: 60px;
+    color: #fff;
+    padding-left: 20px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    color: rgb(110, 100, 107);
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+
+
+.sectionArea {
+    padding: 30px 0;
+}
+
+
+
+
+/*grid alanlarııı*/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; /*bu bizim üçlü kısımları yan yana getiriyor*/
+}
+
+.featuresBody.container {
+    justify-content: space-between;
+}
+
+.col3 {
+    flex-grow: 1;
+    width: 16.66%;
+}
+
+
+/*anasayfa alanları*/
+header.logo {
+    margin-right: auto;
+}
+
+    header.logo img {
+        display: block;
+        height: 70px;
+    }
+
+.menu li {
+    float: left;
+}
+
+    .menu li a {
+        padding: 27px 17px;
+        margin: 10px;
+        display: block;
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: rgb(120, 148, 155);
+        transition: all .5s ease;
+    }
+
+    .menu li:hover a {
+        background: #0a0a5c
+    }
+
+#mainSlider {
+    height: 800px;
+    
+    background: url('/images/anasayfa.jpg') center center no-repeat;
+    background-size:100%;
+    background-size: cover;
+}
+
+.slider {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff
+}
+
+#mainCaption {
+    height: 400px;
+    background: rgba(0,0,0, .3);
+}
+
+
+.featuresTop {
+    text-align: center;
+}
+
+.item {
+    padding: 10px 20px;
+}
+
+
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+    .zoom img {
+        display: block;
+        widows: 100%;
+        height: auto;
+        transition: all .5s ease;
+    }
+
+
+.item .itemText {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #0a0a5c
+}
+
+.item:hover .zoom img {
+    transform: scale(1.25);
+}
+
+
+.item :hover h3 {
+    color: #fff;
+}
+
+
+.item:hover .itemText {
+    background:#0a0a5c;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.btnDetails {
+    color: rgb(46, 25, 38);
+    padding: 5 px 10px;
+    text-decoration: none;
+    border: 1px solid #0a0a5c
+    transition: all .5s ease;
+}
+
+.item:hover .btnDetails {
+    color: #fff;
+    border: 1px solid #ffff;
+}
+
+.itemText p {
+    margin: 20px 0;
+}
+
+.engineBody .container {
+    justify-content: space-between;
+}
+
+.col1 {
+    flex-grow: 1;
+    width: 33.33%;
+    padding: 20px;
+}
+
+
+.engineTop {
+    text-align: center;
+}
+
+.engineContainer {
+    position: relative;
+    width: 100%;
+}
+
+.imageOver {
+    margin-bottom: 30px;
+    width: 30%;
+    height: 10%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
+.buttonDetails {
+    background: rgb(197, 197, 197);
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 0px solid #0a0a5c
+    transition: all .5s ease;
+    line-height: 60px;
+    margin-left: 320px;
+}
+
+
+
+
+
+#turlarSlider {
+    height: 250px;
+    background: url('/images/gezi.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+
+#turlarCaption {
+    height: 100px;
+}
+
+
+.inspectImage {
+    width: 40%;
+    padding-left: 200px;
+}
+
+    .inspectImage img {
+        width: 100%;
+        height: auto;
+    }
+
+.inspectText {
+    width: 60%;
+    padding-left: 150px;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(41, 37, 43);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.inspectText a {
+    float: right;
+    text-decoration: none;
+    color: rgb(69, 57, 73);
+    font-weight: bold;
+}
+
+    .inspectText a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+.footerisim {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(245, 231, 240);
+    color: rgb(53, 32, 42);
+    text-align: center;
+    padding: 10px;
+}
+
+#matterhornSlider {
+    height: 400px;
+    
+    background: url('/images/matterhornh.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+
+#matterhornCaption {
+    height: 100px;
+}
+
+.aw-zoom {
+    position: relative;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+}
+
+    .aw-zoom:hover {
+        z-index: 2;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.sectionHeadernew {
+    background: #0a0a5c
+    height: 50px;
+    width: 700px;
+    color: #fff;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 23%;
+}
+
+
+.featuresTop1 {
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+
+
+
+.butttoonn {
+    margin: 10px;
+    display: block;
+    padding-left: 25%;
+}
+
+.col4 {
+    flex-grow: 1;
+    width: 16.66%;
+    background-color: rgb(245, 252, 248);
+}
+
+
+.container10 {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 500 12px/16px;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 60px;
+    margin: 50px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+    #contact h2 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+.form-control {
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact textarea:hover {
+        -webkit-transition: border-color 0.4s ease-in-out;
+        -moz-transition: border-color 0.4s ease-in-out;
+        transition: border-color 0.4s ease-in-out;
+        border: 1px solid #aaa;
+    }
+
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(182, 139, 167);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+    #contact button[type="submit"]:hover {
+        background: #355C7D;
+        -webkit-transition: background 0.4s ease-in-out;
+        -moz-transition: background 0.4s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    #contact button[type="submit"]:active {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+
+
+.item1 {
+    padding-left: 80px;
+    flex-grow: 1;
+    width: 90%;
+}
+
+
+.item1Text p {
+    margin: 20px 10px;
+}
+
+
+.item1Text {
+    border: 2px solid rgb(218, 177, 201);
+    text-align: center;
+}
+
+h5 {
+    color: rgb(81, 58, 92);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.signup-form {
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(+50%);
+}
+
+.signup-face {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: skyblue;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+    .signup-face > img {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+.form {
+    width: 300px;
+    position: relative;
+    margin: 25px auto;
+}
+
+.input {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        border: 2px solid #0AC986;
+    }
+
+input[type="submit"] {
+    width: 250px;
+    height: 50px;
+    background: #0AC986;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.error-msg {
+    font-size: 20px;
+   
+    color: red;
+    margin-top: 50px;
+    display: none;
+}
+
+.error {
+    position: relative;
+    animation: shake 0.2s;
+}
+
+.login-face {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: skyblue;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+    .login-face > img {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+.login-form {
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(+50%);
+}
+.containerfooter {
+    background-color: white;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    padding-block-end: 0px;
+}
